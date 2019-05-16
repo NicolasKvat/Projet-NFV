@@ -105,4 +105,9 @@ starShipApp.controller('homeController', function(){
              $routeScope.total = total;
            }
          };
+
+      $('.popupAjout').hide();
+      $('.addToCart').click(function showAlert() {
+        $('.popupAjout').show().delay(1000).fadeOut(1000);
+      })
 })
